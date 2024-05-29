@@ -86,13 +86,9 @@ WSGI_APPLICATION = 'FYP.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-   'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fyp',  # Specify the name of your MySQL database
-        'USER': 'root',  # Specify your MySQL username
-        'PASSWORD': 'okasha',  # Specify your MySQL password
-        'HOST': 'localhost',  # Specify the host where MySQL server is running
-        'PORT': '3306',  # Specify the port MySQL is running on (default is 3306)
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
